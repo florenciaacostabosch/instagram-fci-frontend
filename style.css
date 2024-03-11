@@ -1,0 +1,25 @@
+.container-buscador {
+    max-width: 100%;
+    text-align: center;
+}
+.container-buscador input[type="text"] {
+    width: 15%;
+}
+.container-img {
+    max-width: 22%; 
+    margin: 0 auto; 
+}
+.container-img img {
+    width: 30%; 
+    height: 120px; 
+    display: block; 
+    margin-bottom: 10px; 
+}
+.container-barranav {
+    max-width: 100%;
+    text-align: center; 
+    display: block; 
+}
+.container-barranav img {
+    margin-right: 45px; 
+}
