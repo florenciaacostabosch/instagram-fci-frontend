@@ -1,16 +1,6 @@
-.container-buscador {
-    max-width: 100%;
-}
-.container-buscador input[type="text"] {
-    width: 90%;
-    height:30px;
-    border-radius: 5px;
-}
 .container-barranav {
-    margin-top: 760px;
-    max-width: 100%;
     display: flex; 
-    align-items: center; 
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center; 
 }
