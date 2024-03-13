@@ -1,6 +1,29 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header input[type="text"] {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    background-color:#ecebeb;
+    border: none; 
+    background-image: url('assets/iconos/lupainput.svg');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+.header img {
+    cursor: pointer;
+}
 .container-barranav {
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
     align-items: center; 
 }
+.container-barranav img{
+    cursor: pointer;
+}
+
