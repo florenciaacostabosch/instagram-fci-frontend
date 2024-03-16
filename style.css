@@ -1,10 +1,19 @@
-.header {
+.header-index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    cursor: pointer;
+}
+.header-buscador {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
-.header input[type="text"] {
+.header-buscador input[type="text"] {
+    max-width: 350px;
     width: 80%;
     height: 30px;
     border-radius: 5px;
@@ -14,16 +23,16 @@
     background-repeat: no-repeat;
     background-position: 5px center;
 }
-.header img {
+.header-buscador img {
     cursor: pointer;
 }
-.container-barranav {
+.footer {
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
     align-items: center; 
 }
-.container-barranav img{
+.footer img{
     cursor: pointer;
 }
 
