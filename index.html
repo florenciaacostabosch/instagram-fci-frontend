@@ -13,7 +13,9 @@
         <img style="margin-right: -100px;" src="./assets/iconos/notificaciones.svg" alt="icon notifications">
         <img src="./assets/iconos/direct-message.svg" alt="icon direct message">
     </div>
-
+    <div id="history-section"></div>
+ 
+    <!--
     <div style="display: flex; flex-direction: row; padding-top: 8px; padding-left: 8px; padding-right: 8px">
         <div style="display: flex; flex-direction: column; align-items: center">
             <div style="padding: 6px">
@@ -45,7 +47,7 @@
             </div>
         </div>
     </div>
-
+    -->
     <div class="footer">
             <img src="./assets/iconos/home.svg" alt="icon add content">
             <img src="./assets/iconos/lupa.svg" alt="icon buscador">
@@ -53,5 +55,60 @@
             <img src="./assets/iconos/notificaciones.svg" alt="icon notificaciones">
             <img src="./assets/iconos/perfil.svg" alt="profile image">
     </div>
-    </body>
+    <script>
+        let arrayHistorias = [
+            {
+                id: '1',
+                img: './assets/imagenes/ruffles.svg',
+                userName: 'Ruffles',
+                isUpToDate: false
+            },
+            {
+                id:'2',
+                img: './assets/imagenes/sabanok.svg',
+                userName: 'sabanok',
+                isUpToDate: false
+            },
+            {
+                id:'3',
+                img: './assets/imagenes/bluebuoy.svg',
+                userName: 'bluebuoy',
+                isUpToDate: false
+            },
+            {
+                id:'4',
+                img: './assets/imagenes/waggles',
+                userName: 'waggles',
+                isUpToDate: false
+            }
+            {
+                id:'5',
+                img: './assets/imagenes/steve.svg',
+                userName: 'steve.lo',
+                isUpToDate: false
+            }
+        ];
+
+        let seccionHistoria = document.getElementById('history-section');
+        for (let i = 0; i < arrayHistorias.length; i++) {
+            debugger;
+            seccionHistoria.innerHTML += `
+                <div style="display: inline-block; flex-direction: row; padding-top: 8px; padding-left: 4px; padding-right: 4px">
+                <div style="display: flex; flex-direction: column; align-items: center">
+                <div style="padding: 6px">
+                <div style="position: relative; height: 60px; width: 60px;">
+                <img
+                    style="height: 60px; width: 60px; border-radius: 60px;"
+                    src="${arrayHistorias[i].img}"
+                    alt="profile-photo">
+                </div>
+                <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${arrayHistorias[i].userName}</span>
+                </div>
+            </div>
+        </div>
+        `;
+        debugger;
+        }
+    </script>
+</body>
 </html>
