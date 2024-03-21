@@ -14,6 +14,7 @@
         <img src="./assets/iconos/direct-message.svg" alt="icon direct message">
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <div class="footer">
             <img src="./assets/iconos/home.svg" alt="icon add content">
@@ -22,6 +23,8 @@
             <img src="./assets/iconos/notificaciones.svg" alt="icon notificaciones">
             <img src="./assets/iconos/perfil.svg" alt="profile image">
 =======
+=======
+>>>>>>> feature/home-post_#86bxza0u6
     <div style="display: flex; flex-direction: row; padding-top: 8px; padding-left: 8px; padding-right: 8px">
         <div style="display: flex; flex-direction: column; align-items: center">
             <div style="padding: 6px">
@@ -36,6 +39,7 @@
                 </div>
             </div>
         <div>
+<<<<<<< HEAD
             <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">Ruffles</span>
         </div>
 >>>>>>> feature/home-historia_#86bxxzy1j
@@ -44,6 +48,38 @@
     <div id="history-section" style="display: flex; flex-direction: row; padding-top: 2px; padding-left: 8px; padding-right: 8px; text-align: center">
     </div>
 </div>
+=======
+            <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E;">Ruffles</span>
+        </div>
+    </div>
+
+        <div id="history-section" style="display: flex; flex-direction: row; padding-top: 2px; padding-left: 8px; padding-right: 8px; text-align: center">
+        </div>
+    </div>
+
+
+<div class="post">
+    <img
+        style="height: 40px; width: 40px; border-radius: 40px;"
+        src="./assets/imagenes/ruffles.svg"
+        alt="profile-photo">
+    <span style="font-family: sans-serif; font-size: 12px; color: #181717;font-weight: bold">Ruffles</span>
+    <img
+        style="height: 390px; width: 390px; max-width: 100%;"
+        src="./assets/imagenes/postRuffles.svg"
+        alt="post-photo">
+    <div class="barra-post">
+            <img src="./assets/iconos/heartRed.svg" alt="icon likes">
+            <img style="margin-left: -100px;" src="./assets/iconos/comment.svg" alt="icon comments">
+            <img style="margin-left: -100px;" src="./assets/iconos/share.svg" alt="icon share">
+            <img style="margin-left: -70px;" src="./assets/iconos/carouselDoots.svg" alt="icon carousel">
+            <img src="./assets/iconos/save.svg" alt="icon save">
+    </div>
+
+</div>
+
+
+>>>>>>> feature/home-post_#86bxza0u6
     <div class="footer">
         <img src="./assets/iconos/home.svg" alt="icon add content">
         <img src="./assets/iconos/lupa.svg" alt="icon buscador">
@@ -51,6 +87,7 @@
         <img src="./assets/iconos/notificaciones.svg" alt="icon notificaciones">
         <img src="./assets/iconos/perfil.svg" alt="profile image">
     </div>
+
 
     <script>
         let arrayHistorias = [
@@ -91,6 +128,56 @@
                 </div>
             `;
         }
+<<<<<<< HEAD
+=======
+
+
+        let arrayPost = [
+            {
+                id: '1',
+                imageProfile: './assets/imagenes/ruffles.svg',
+                userName: 'Ruffles',
+                type: 'carousel',
+                multimedia: ['./assets/imagenes/postRuffles.svg', './assets/imagenes/postSabanok.svg'],
+                likes: 100,
+                description: 'Lorem ipsum dolor sit amet, consectetur', 
+                comments: [
+                    {
+                        comment: 'comentario 1',
+                        timeStampComment:'',
+                        reply: [
+                            'respuesta 1 a comentario 1',
+                            'respuesta 2 a comentario 1',
+                            'respuesta 3 a comentario 1',
+                            ]
+                    },
+                    {
+                        comment: 'comentario 2',
+                        timeStampComment:'',
+                        reply:  [
+                            'respuesta 1 a comentario 1',
+                            'respuesta 2 a comentario 1',
+                            ]
+                    }
+                        ],
+                
+                tagged: [
+                    {
+                        idUserTagged: '2',
+                        userNameTagged: 'sabanok',
+                        imageProfileUserTagged: './assets/imagenes/sabanok.svg',
+                    },
+                    {
+                        idUserTagged: '3',
+                        userNameTagged: 'waggles',
+                        imageProfileUserTagged: './assets/imagenes/waggles.svg',
+                    },
+                        ],
+                location: 'Barcelona, España',
+                timeStampPost: '',
+            },
+        ];
+>>>>>>> feature/home-post_#86bxza0u6
 </script>
 </body>
 </html>

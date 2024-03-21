@@ -26,6 +26,14 @@
 .header-buscador img {
     cursor: pointer;
 }
+ .barra-post{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    cursor: pointer;
+}
 .footer {
     display: flex; 
     flex-direction: row;
