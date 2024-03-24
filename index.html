@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="header-index">
         <img style="height: 30px; margin-right: 8px" src="./assets/iconos/ig-logo.svg" alt="logo instagram">
         <img style="margin-left: -130px;" src="./assets/iconos/icon-dropdown.svg" alt="icon dropdown">
@@ -14,7 +15,11 @@
         <img src="./assets/iconos/direct-message.svg" alt="icon direct message">
     </div>
 
+<<<<<<< HEAD
     <div style="display: flex; flex-direction: row; padding-top: 8px; padding-left: 8px; padding-right: 8px">
+=======
+    <div style="display: flex; flex-direction: row; padding-top: 8px;">
+>>>>>>> feature/home-post_#86bxza0u6
         <div style="display: flex; flex-direction: column; align-items: center">
             <div style="padding: 6px">
                 <div style="position: relative; height: 60px; width: 60px;">
@@ -37,25 +42,31 @@
 </div>
 
 
-
-<div class="post">
+<div class="container-post">
     <img
         style="height: 40px; width: 40px; border-radius: 40px;"
         src="./assets/imagenes/ruffles.svg"
         alt="profile-photo">
-    <span style="font-family: sans-serif; font-size: 12px; color: #181717;font-weight: bold">Ruffles</span>
+    <span style="font-family: sans-serif; font-size: 12px; color: #181717;font-weight: bold;">Ruffles</span>
     <img
-        style="height: 390px; width: 390px; max-width: 100%;"
+        style="height: 390px; width: 390px; max-width: 100%; margin-top: -10px;"
         src="./assets/imagenes/postRuffles.svg"
         alt="post-photo">
+        
     <div class="barra-post">
             <img src="./assets/iconos/heartRed.svg" alt="icon likes">
             <img style="margin-left: -100px;" src="./assets/iconos/comment.svg" alt="icon comments">
             <img style="margin-left: -100px;" src="./assets/iconos/share.svg" alt="icon share">
             <img style="margin-left: -70px;" src="./assets/iconos/carouselDoots.svg" alt="icon carousel">
-            <img src="./assets/iconos/save.svg" alt="icon save">
+            <img style="margin-right: 5px;" src="./assets/iconos/save.svg" alt="icon save">
     </div>
-
+    <div class="container-description">
+    <span style="font-family: sans-serif; font-size: 14px; color: #181717;font-weight: bold">100 Likes</span>
+    <span style="font-family: sans-serif; font-size: 14px; color: #181717;font-weight: bold;">Ruffles</span>
+    <span style="font-family: sans-serif; font-size: 14px; color: #181717">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... more</span>
+    <span style="font-family: sans-serif; font-size: 14px; color: #6E6E6E">Ver los 16 comentarios</span>
+    <span style="font-family: sans-serif; font-size: 14px; color: #6E6E6E">Hace 2 días</span>
+    </div>
 </div>
 
 
@@ -67,10 +78,8 @@
         <img src="./assets/iconos/perfil.svg" alt="profile image">
     </div>
 
-
     <script>
-        let arrayHistorias = [
-           
+        let arrayHistorias = [ 
             {
                 id:'1',
                 img: './assets/imagenes/sabanok.svg',
@@ -89,6 +98,12 @@
                 userName: 'waggles',
                 isUpToDate: true
             },
+            {
+                id:'4',
+                img: './assets/imagenes/steve.svg',
+                userName: 'steve.lo',
+                isUpToDate: true
+            },
         ];
        
         let seccionHistoria = document.getElementById('history-section');
@@ -102,12 +117,12 @@
                                 src="${arrayHistorias[i].img}"
                                 alt="profile-photo">
                         </div>
+                        <div style="margin-top: 5px;">
                         <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${arrayHistorias[i].userName}</span>
                     </div>
                 </div>
             `;
         }
-
 
         let arrayPost = [
             {
@@ -117,7 +132,7 @@
                 type: 'carousel',
                 multimedia: ['./assets/imagenes/postRuffles.svg', './assets/imagenes/postSabanok.svg'],
                 likes: 100,
-                description: 'Lorem ipsum dolor sit amet, consectetur', 
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... more', 
                 comments: [
                     {
                         comment: 'comentario 1',
@@ -137,7 +152,6 @@
                             ]
                     }
                         ],
-                
                 tagged: [
                     {
                         idUserTagged: '2',
