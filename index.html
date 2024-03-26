@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<<<<<<< HEAD
     <div class="header-index">
         <img style="height: 30px; margin-right: 8px" src="./assets/iconos/ig-logo.svg" alt="logo instagram">
         <img style="margin-left: -130px;" src="./assets/iconos/icon-dropdown.svg" alt="icon dropdown">
@@ -23,3 +24,186 @@
     </div>
     </body>
 </html>
+=======
+
+    <!--Header-->
+    <div class="header-index">
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <img style="height: 30px; margin-right: 8px;" src="./assets/iconos/ig-logo.svg" alt="logo instagram">
+            <img src="./assets/iconos/icon-dropdown.svg" alt="icon dropdown">
+        </div>
+            <img style="margin-right: -90px;"src="./assets/iconos/notificaciones.svg" alt="icon notifications">
+            <img style="margin-right: 40px;" src="./assets/iconos/direct-message.svg" alt="icon direct message">
+        </div>
+    </div>
+
+    <!--Historias-->
+    <div style="display: flex; flex-direction: row; padding-top: 8px;">
+        <div style="display: flex; flex-direction: column; align-items: center">
+            <div style="padding: 6px">
+                <div style="position: relative; height: 60px; width: 60px;">
+                    <img
+                        style="height: 60px; width: 60px; border-radius: 60px;"
+                        src="./assets/imagenes/ruffles.svg"
+                        alt="profile-photo">
+                    <div style="position: absolute; bottom: 0; right: 0; height: 20px; width: 20px; display: flex; align-items: center; justify-content: center; background-color: #1FA1FF; border-radius: 10px;">
+                        <img style="height: 10px; width: 10px" src="./assets/iconos/add-icon.svg" alt="add-icon">
+                    </div>
+                </div>
+            </div>
+        <div>
+            <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">Ruffles</span>
+        </div>
+    </div>
+        <div id="history-section" style="display: flex; padding-top: 2px; padding-left: 8px; padding-right: 8px; text-align: center;"></div>
+    </div>
+
+    <!--Post-->
+    <div id="post-section" style="display: flex; flex-direction: column;"></div>
+
+    <!--Footer-->
+    <div class="footer">
+        <img src="./assets/iconos/home.svg" alt="icon add content">
+        <img src="./assets/iconos/lupa.svg" alt="icon buscador">
+        <img src="./assets/iconos/post.svg" alt="icon post ">
+        <img src="./assets/iconos/notificaciones.svg" alt="icon notificaciones">
+        <img src="./assets/iconos/perfil.svg" alt="profile image">
+    </div>
+
+    <script>
+        let arrayHistorias = [ 
+            {
+                id:'1',
+                img: './assets/imagenes/sabanok.svg',
+                userName: 'sabanok',
+                isUpToDate: false
+            },
+            {
+                id:'2',
+                img: './assets/imagenes/bluebuoy.svg',
+                userName: 'bluebuoy',
+                isUpToDate: false
+            },
+            {
+                id:'3',
+                img: './assets/imagenes/waggles.svg',
+                userName: 'waggles',
+                isUpToDate: true
+            },
+            {
+                id:'4',
+                img: './assets/imagenes/steve.svg',
+                userName: 'steve.lo',
+                isUpToDate: true
+            },
+        ];
+       
+        let seccionHistoria = document.getElementById('history-section');
+            for (let i = 0; i < arrayHistorias.length; i++) {
+                seccionHistoria.innerHTML += `
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="padding: 6px">
+                            <div style="position: relative; height: 60px; width: 60px;">
+                                <img
+                                    style="height: 60px; width: 60px; border-radius: 60px; border: 2px solid white; outline: 2px solid ${arrayHistorias[i].isUpToDate ? 'grey' : 'orange'};"
+                                    src="${arrayHistorias[i].img}"
+                                    alt="profile-photo">
+                            </div>
+                        <div style="margin-top: 5px;">
+                            <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${arrayHistorias[i].userName}</span>
+                        </div>
+                    </div>
+                `;
+            }
+
+        let arrayPost = [
+            {
+                id: '1',
+                imgProfile: './assets/imagenes/ruffles.svg',
+                userName: 'Ruffles',
+                type: 'carousel',
+                multimedia: './assets/imagenes/postRuffles.svg',
+                likes: 100,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... more', 
+                comments: 'Ver los 16 comentarios',
+                location: '',
+                timeStampPost: 'Hace 2 días',
+            },
+            {
+                id: '2',
+                imgProfile: './assets/imagenes/sabanok.svg',
+                userName: 'Sabanok',
+                type: 'carousel',
+                multimedia: './assets/imagenes/postSabanok.svg',
+                likes: 90,
+                description: 'My best friend', 
+                comments: [
+                    {
+                        comment: 'comentario 1',
+                        timeStampComment:'',
+                        reply: [
+                            'respuesta 1 a comentario 1',
+                            'respuesta 2 a comentario 1',
+                            'respuesta 3 a comentario 1',
+                            ]
+                    },
+                    {
+                        comment: 'comentario 2',
+                        timeStampComment:'',
+                        reply:  [
+                            'respuesta 1 a comentario 1',
+                            'respuesta 2 a comentario 1',
+                            ]
+                    }
+                        ],
+                tagged: [
+                    {
+                        idUserTagged: '1',
+                        userNameTagged: 'Ruffles',
+                        imageProfileUserTagged: './assets/imagenes/ruffles.svg',
+                    },
+                        ],
+                location: 'Barcelona',
+                timeStampPost: 'Hace 3 días',
+            },
+
+        ];
+
+        let seccionPost = document.getElementById('post-section');
+        arrayPost.forEach(function(post) {
+                seccionPost.innerHTML += `
+                    <div class="seccion-post" style="max-width: 390px;">
+                        <div style="display: flex; align-items: center;">
+                            <img
+                                style="height: 40px; width: 40px; border-radius: 40px;"
+                                src="${post.imgProfile}"
+                                alt="profile-photo">
+                            <span style="font-family: sans-serif; font-size: 12px; color: #181717;font-weight: bold;margin-left: 5px">${post.userName}</span>
+                            <img style="margin-left: 250px;" src="./assets/iconos/more.svg" alt="icon more">
+                        </div>
+                            <img
+                                style="height: 390px; width: 390px; max-width: 100%;"
+                                src="${post.multimedia}"
+                                alt="post-photo">
+                    </div> 
+                        <div class="barra-post" style="display: flex; flex-direction: row; align-items: center; justify-content: left; cursor: pointer; max-width: 340px;">
+                            <img src="./assets/iconos/heartRed.svg" alt="icon likes">
+                            <img style="margin-left: 10px;" src="./assets/iconos/comment.svg" alt="icon comments">
+                            <img style="margin-left: 10px;" src="./assets/iconos/share.svg" alt="icon share">
+                            <img style="margin-left: 60px;" src="./assets/iconos/carouselDoots.svg" alt="icon carousel">
+                            <img style="margin-left: 140px;" src="./assets/iconos/save.svg" alt="icon save">
+                        </div>
+                            <div class="container-description" style="display: flex; flex-direction: column;">
+                                <span style="font-family: sans-serif; font-size: 12px; color: #181717;font-weight: bold; margin-top: 5px">${post.likes} Likes</span>
+                                <span style="font-family: sans-serif; font-size: 12px; color: #181717;font-weight: bold; margin-top: 5px">${post.userName}</span>
+                                <span style="font-family: sans-serif; font-size: 12px; color: #181717">${post.description}</span>
+                                <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${post.comments}</span>
+                                <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${post.timeStampPost}</span>
+                            </div>
+                        </div>
+                        `;
+});
+    </script>
+</body>
+</html>
+>>>>>>> develop
