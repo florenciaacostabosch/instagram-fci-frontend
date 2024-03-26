@@ -18,13 +18,9 @@
             <img style="margin-right: 40px;" src="./assets/iconos/direct-message.svg" alt="icon direct message">
         </div>
     </div>
-<<<<<<< HEAD
-    <div style="display: flex; flex-direction: row; padding-top: 8px; padding-left: 8px; padding-right: 8px">
-=======
 
     <!--Historias-->
     <div style="display: flex; flex-direction: row; padding-top: 8px;">
->>>>>>> feature/home-post_#86bxza0u6
         <div style="display: flex; flex-direction: column; align-items: center">
             <div style="padding: 6px">
                 <div style="position: relative; height: 60px; width: 60px;">
@@ -38,15 +34,6 @@
                 </div>
             </div>
         <div>
-<<<<<<< HEAD
-            <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">Ruffles</span>
-        </div>
-    </div>
-
-    <div id="history-section" style="display: flex; flex-direction: row; padding-top: 2px; padding-left: 8px; padding-right: 8px; text-align: center">
-    </div>
-</div>
-=======
             <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E;">Ruffles</span>
         </div>
     </div>
@@ -57,7 +44,6 @@
     <div id="post-section" style="display: flex; flex-direction: column;"></div>
 
     <!--Footer-->
->>>>>>> feature/home-post_#86bxza0u6
     <div class="footer">
         <img src="./assets/iconos/home.svg" alt="icon add content">
         <img src="./assets/iconos/lupa.svg" alt="icon buscador">
@@ -67,12 +53,7 @@
     </div>
 
     <script>
-<<<<<<< HEAD
-        let arrayHistorias = [
-           
-=======
         let arrayHistorias = [ 
->>>>>>> feature/home-post_#86bxza0u6
             {
                 id:'1',
                 img: './assets/imagenes/sabanok.svg',
@@ -90,30 +71,16 @@
                 img: './assets/imagenes/waggles.svg',
                 userName: 'waggles',
                 isUpToDate: true
-<<<<<<< HEAD
-=======
             },
             {
                 id:'4',
                 img: './assets/imagenes/steve.svg',
                 userName: 'steve.lo',
                 isUpToDate: true
->>>>>>> feature/home-post_#86bxza0u6
             },
         ];
        
         let seccionHistoria = document.getElementById('history-section');
-<<<<<<< HEAD
-        for (let i = 0; i < arrayHistorias.length; i++) {
-            seccionHistoria.innerHTML += `
-                <div style="display: flex; flex-direction: column; align-items: center">
-                    <div style="padding: 6px">
-                        <div style="position: relative; height: 60px; width: 60px;">
-                            <img
-                                style="height: 60px; width: 60px; border-radius: 60px; border: 2px solid white; outline: 2px solid ${arrayHistorias[i].isUpToDate ? 'grey' : 'orange'};"
-                                src="${arrayHistorias[i].img}"
-                                alt="profile-photo">
-=======
             for (let i = 0; i < arrayHistorias.length; i++) {
                 seccionHistoria.innerHTML += `
                     <div style="display: flex; flex-direction: column; align-items: center;">
@@ -126,16 +93,9 @@
                             </div>
                         <div style="margin-top: 5px;">
                             <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${arrayHistorias[i].userName}</span>
->>>>>>> feature/home-post_#86bxza0u6
                         </div>
                         <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${arrayHistorias[i].userName}</span>
                     </div>
-<<<<<<< HEAD
-                </div>
-            `;
-        }
-</script>
-=======
                 `;
             }
 
@@ -227,6 +187,5 @@
                         `;
 });
     </script>
->>>>>>> feature/home-post_#86bxza0u6
 </body>
 </html>
