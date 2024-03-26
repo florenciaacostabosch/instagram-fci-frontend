@@ -26,23 +26,6 @@
 .header-buscador img {
     cursor: pointer;
 }
-.container-post{
-    display: flex;
-    flex-direction: column;
-}
- .barra-post{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -12px;
-    cursor: pointer;
-}
-.container-description{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-}
 .footer {
     display: flex; 
     flex-direction: row;
