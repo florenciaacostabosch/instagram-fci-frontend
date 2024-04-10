@@ -93,11 +93,11 @@
                             style="height: 40px; width: 40px; border-radius: 40px;"
                             src="${post.imgProfile}"
                             alt="profile-photo">
-                                <span>${post.userName}</span>
-                                    <img style="margin-left: auto;" src="./assets/iconos/more.svg" alt="icon more">
+                                <span style="margin-left:10px;">${post.userName}</span>
+                                    <img style="margin-left: auto" src="./assets/iconos/more.svg" alt="icon more">
                         </div>
                             <img
-                                style="height: 390px; width: 390px; max-width: 100%;" src="${post.images[0]}" alt="post-img">
+                                style="height: 380px; width: 380px; max-width: 100%; margin-top: 10px" src="${post.images[0]}" alt="post-img">
                     </div>
                         <div class="barra-postleft">
                             <img src="./assets/iconos/heartRed.svg" alt="icon likes">
@@ -111,7 +111,7 @@
                                 <img src="./assets/iconos/save.svg" alt="icon save">
                             </div>
                             <div class="container-description">
-                                <span style="font-weight: bold; margin-top: 10px">${post.likes} Likes</span>
+                                <span style="font-weight: bold; margin-top: 5px">${post.likes} Likes</span>
                                 <span style="font-weight: bold; margin-top: 5px">${post.userName}</span>
                                 ${post.description}
                                 ${currentComments}
