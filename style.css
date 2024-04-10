@@ -26,6 +26,32 @@
 .header-buscador img {
     cursor: pointer;
 }
+.seccion-post{
+    max-width: 390px;
+    font-family: sans-serif; 
+    font-size: 12px; 
+    color: #181717;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.barra-postleft{
+    display: flex; 
+    justify-content: flex-start; 
+    cursor: pointer;
+}
+.barra-postright{
+    display: flex; 
+    justify-content: flex-end; 
+    cursor: pointer; 
+    margin-top: -10px;
+}
+.container-description{
+    display: flex; 
+    flex-direction: column;
+    font-family: sans-serif; 
+    font-size: 12px;
+    color: #181717;
+}
 .footer {
     display: flex; 
     flex-direction: row;

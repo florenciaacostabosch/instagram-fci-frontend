@@ -1,31 +1,3 @@
- /*
- let arrayHistorias = [ 
-    {
-        id:'1',
-        img: './assets/imagenes/sabanok.svg',
-        userName: 'sabanok',
-        isUpToDate: false
-    },
-    {
-        id:'2',
-        img: './assets/imagenes/bluebuoy.svg',
-        userName: 'bluebuoy',
-        isUpToDate: false
-    },
-    {
-        id:'3',
-        img: './assets/imagenes/waggles.svg',
-        userName: 'waggles',
-        isUpToDate: true
-    },
-    {
-        id:'4',
-        img: './assets/imagenes/steve.svg',
-        userName: 'steve.lo',
-        isUpToDate: true
-    },
-];
-*/
     const BASE_IMAGE_URL = 'https://gkfibffviwvmphzqvuqe.supabase.co/storage/v1/object/public/fci-personal';
 
     function formatter(storie, BASE_IMAGE_URL) {
