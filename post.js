@@ -8,7 +8,7 @@
             userName: post.user_name || '',
             likes: post.likes || 0,
             comments: post.comments || [],  
-            images: images || [],
+            images: images || []
         };
     }
 
@@ -79,7 +79,8 @@
                 console.error('No se ha podido descargar el post, intente más tarde', error);
         });
 
-    let seccionPost = document.getElementById('post-section');
+        
+        let seccionPost = document.getElementById('post-section');
         arrayPost.forEach(function(post) {
             let currentComments='';
                 for (let j= 0; j < post.comments.length; j++){
@@ -96,9 +97,9 @@
                                 <span style="margin-left:10px;">${post.userName}</span>
                                     <img style="margin-left: auto" src="./assets/iconos/more.svg" alt="icon more">
                         </div>
-                            <img
-                                style="height: 380px; width: 380px; max-width: 100%; margin-top: 10px" src="${post.images[0]}" alt="post-img">
-                    </div>
+                        <div class="carousel-container">
+                        ${post.images.map(image => `<img style="height: 380px; width: 380px; max-width: 100%; margin-top: 10px;" src="${image}" alt="post-img">`)}
+                        </div>
                         <div class="barra-postleft">
                             <img src="./assets/iconos/heartRed.svg" alt="icon likes">
                                 <img style="margin-left: 10px;" src="./assets/iconos/comment.svg" alt="icon comments">
@@ -121,7 +122,3 @@
                         });
                     }
     getPost();
-    
-
-
-
