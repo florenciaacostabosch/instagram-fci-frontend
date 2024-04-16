@@ -78,7 +78,6 @@
             .catch((error) => {
                 console.error('No se ha podido descargar el post, intente más tarde', error);
         });
-
         
         let seccionPost = document.getElementById('post-section');
         arrayPost.forEach(function(post) {
@@ -97,9 +96,7 @@
                                 <span style="margin-left:10px;">${post.userName}</span>
                                     <img style="margin-left: auto" src="./assets/iconos/more.svg" alt="icon more">
                         </div>
-                        <div class="carousel-container">
-                        ${post.images.map(image => `<img style="height: 380px; width: 380px; max-width: 100%; margin-top: 10px;" src="${image}" alt="post-img">`)}
-                        </div>
+                        <img style="height: 380px; width: 380px; max-width: 100%; margin-top: 10px" src="${post.images[0]}" alt="post-img">
                         <div class="barra-postleft">
                             <img src="./assets/iconos/heartRed.svg" alt="icon likes">
                                 <img style="margin-left: 10px;" src="./assets/iconos/comment.svg" alt="icon comments">
