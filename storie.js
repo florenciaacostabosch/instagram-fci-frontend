@@ -6,7 +6,7 @@
             createdAt: storie.created_at || null,
             userName: storie.profile_name || '',
             img: BASE_IMAGE_URL + storie.profile_image || '',
-            isUpToDate: storie.is_up_to_date || true
+            isUpToDate: storie.is_up_to_date || null,
         };
     }
 
@@ -56,10 +56,10 @@
                             <img
                                 style="height: 60px; width: 60px; border-radius: 60px; border: 2px solid white; outline: 2px solid ${arrayHistorias[i].isUpToDate ? 'grey' : 'orange'};"
                                 src="${arrayHistorias[i].img}"
-                                alt="profile-photo">
+                                alt="profile-img">
                         </div>
                     <div style="margin-top: 5px;">
-                <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E">${arrayHistorias[i].userName}</span>
+                <span style="font-family: sans-serif; font-size: 12px; color: #6E6E6E; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}">${arrayHistorias[i].userName}</span>
             </div>
         </div>
         `;
