@@ -100,22 +100,22 @@
                         <div class="barra-postleft">
                             <img src="./assets/iconos/heartRed.svg" alt="icon likes">
                                 <img style="margin-left: 10px;" src="./assets/iconos/comment.svg" alt="icon comments">
-                                    <img style="margin-left: 10px;" src="./assets/iconos/share.svg" alt="icon share">
+                                <img style="margin-left: 10px;" src="./assets/iconos/share.svg" alt="icon share">
                         </div>
-                            <div class="type-carrousel" style="display: flex; justify-content: center; cursor: pointer; margin-top: -15px">
-                                ${post.type === 'CARROUSEL' ? `<img src="./assets/iconos/carouselDoots.svg" alt="icon carousel">` : ''}
-                            </div>
-                            <div class="barra-postright">
-                                <img src="./assets/iconos/save.svg" alt="icon save">
-                            </div>
-                            <div class="container-description">
-                                <span style="font-weight: bold; margin-top: 5px">${post.likes} Likes</span>
-                                <span style="font-weight: bold; margin-top: 5px">${post.userName}</span>
-                                ${post.description}
-                                ${currentComments}
+                        <div class="type-carrousel" style="display: flex; justify-content: center; cursor: pointer; margin-top: -15px">
+                            ${post.type === 'CARROUSEL' ? `<img src="./assets/iconos/carouselDoots.svg" alt="icon carousel">` : ''}
+                        </div>
+                        <div class="barra-postright">
+                            <img src="./assets/iconos/save.svg" alt="icon save">
+                        </div>
+                        <div class="container-description">
+                            <span style="font-weight: bold; margin-top: 5px">${post.likes} Likes</span>
+                            <span style="font-weight: bold; margin-top: 5px">${post.userName}</span>
+                            ${post.description}
+                            ${currentComments}
                             <span style="color: #6E6E6E">${post.createdAt}</span>
                         </div>
-                            </div>`;
-                        });
-                    }
-    getPost();
+                    </div>`;
+                });
+            }
+        getPost();
